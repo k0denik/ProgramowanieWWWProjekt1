@@ -1,0 +1,28 @@
+#continuous-scrolling-heading {
+    text-align: center;
+    padding: 1em;
+    font-size: 4em;
+    color: white;
+
+    background: rgba(20, 20, 20, 0.30);
+    background-clip: content-box;
+}
+
+#gallery {
+    height: 45vh;
+    overflow-y: scroll;
+}
+
+#gallery img {
+    margin: auto;
+    padding: 1em;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+#gallery img:hover {
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(114, 96, 153, 0.6);
+}

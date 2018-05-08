@@ -1,0 +1,15 @@
+.parallax {
+    background: url("../img/bright-daylight-environment-240040.jpg") no-repeat;
+    background-position-y: 0px;
+}
+
+.parallax h1 {
+    text-align: center;
+    padding: 3em 0;
+    font-size: 4em;
+    color: rgba(255,255,255,1);
+
+    background: rgba(20, 20, 20, 0.30);
+    background-clip: content-box;
+
+}

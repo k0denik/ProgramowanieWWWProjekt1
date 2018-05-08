@@ -1,0 +1,130 @@
+/* color variables */
+
+:root {
+    --forest: #04202C;
+    --evergreen: #304040;
+    --reflection: #34675C;
+    --pine: #5B7065;
+    --fog: #C9D1C8;
+}
+
+/* header */
+
+.jumbotron {
+    background: white url("../img/fog-foggy-forest.jpg") no-repeat center;
+    background-size: 100%;
+}
+
+.jumbotron h1, blockquote {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.jumbotron h1 {
+    width: 8em;
+    text-align: center;
+}
+
+.jumbotron blockquote {
+    width: 35em;
+    text-align: center;
+}
+
+.jumbotron blockquote footer {
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+/* accordion hide-show buttons */
+
+#button-hide-container button, #button-show-container button {
+    height: 40px;
+    background-color: var(--evergreen);
+    color: var(--fog);
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 0px;
+    border-color: var(--fog);
+}
+
+#button-show-container button:hover, #button-hide-container button:hover {
+    background-color: var(--reflection);
+    color: white;
+}
+
+.btn.btn-primary:not(:disabled):not(.disabled):focus{
+    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.075) inset, 0 0 8px rgba(114, 96, 153, 0.6);
+}
+
+#button-hide-container {
+    padding: 2px 15px;
+}
+
+#button-show-container {
+    padding: 2px 0px;
+    visibility: hidden;
+}
+
+#menu-container.hidden {
+    display: none;
+}
+
+#button-show-container button.show {
+    visibility: visible;
+}
+
+/* accordion */
+
+.card-header {
+    background-color: var(--evergreen);
+    padding: 0;
+}
+
+.card-header button {
+    color: var(--fog);
+    width: 100%;
+    padding: 1.25em 0;
+    overflow: hidden;
+}
+
+.btn.btn-link::after {
+    content: " -";
+    font-weight: bold;
+}
+
+.btn.btn-link.collapsed::after {
+    content: " +";
+    font-weight: bold;
+}
+
+.card-header:hover {
+    background-color: var(--reflection);
+}
+
+.card-header button:hover {
+    color: white;
+}
+
+/* footer */
+
+#footer {
+    position: fixed;
+    height: 2em;
+    bottom: 0;
+    margin-top: 32px;
+    width: 100%;
+    background: white url("../img/cloudy-fog-foggy-footer.jpg") no-repeat center;
+    background-size: 100%;
+}
+
+#footer div {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    padding: 0 0.5em 0 0.5em;
+    display: inline-block;
+    float: right;
+
+}
+
+#footer div span {
+    vertical-align: middle;
+}

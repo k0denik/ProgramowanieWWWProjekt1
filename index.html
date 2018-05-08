@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>hunger of the pine</title>
+</head>
+<body>
+<div class="jumbotron">
+    <h1 class="display-4">hunger of the pine</h1>
+    <blockquote class="blockquote">
+        <p class="mb-0">Green is the prime color of the world, and that from which its loveliness arises.</p>
+        <footer class="blockquote-footer">Pedro Calderon de la Barca</footer>
+    </blockquote>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div id="menu-container" class="col-3">
+
+            <div id="button-hide-container" class="row justify-content-end">
+                <button type="button" class="btn btn-primary">x</button>
+            </div>
+
+            <!--https://getbootstrap.com/docs/4.0/components/collapse/-->
+            <div id="accordion">
+
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                    data-url="subpages/about.html"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                about
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            About this project.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    data-url="subpages/continuous-scrolling.html"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                continuous scrolling
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Continuous scrolling is an awesome UI pattern - here's a little demo.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                    data-url="subpages/parallax-demo.html"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                parallax demo
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Clicking on this button will hide the menu to show the parallax effect in its full glory.
+                            That's why you won't probably see this text.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                    data-url="subpages/glorious-ducks.html"
+                                    aria-expanded="false" aria-controls="collapseFour">
+                                glorious ducks
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            The project required 5 subpages so I guess there it goes.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                                    data-url="subpages/supreme-victory.html"
+                                    aria-expanded="false" aria-controls="collapseFive">
+                                supreme victory
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            壮大な生き物
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col">
+            <div id="button-show-container">
+                <button type="button" class="btn btn-primary">+</button>
+            </div>
+            <div id="content"></div>
+        </div>
+    </div>
+</div>
+<div id="footer" class="container-fluid">
+    <div>
+        <span>built with Bootstrap & jQuery, Jakub Pamuła, 02.05.2018</span>
+    </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous" defer></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous" defer></script>
+<!-- Custom JavaScript -->
+<script src="js/main.js" defer></script>
+</body>
+</html>
